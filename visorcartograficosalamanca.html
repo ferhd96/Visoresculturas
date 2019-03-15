@@ -89,7 +89,7 @@ var featuresLayer = new L.GeoJSON(esculturas, {onEachFeature: function(feature,l
 
 var searchControl = new L.Control.Search({
 layer: featuresLayer,
-propertyName: 'Autor',
+propertyName: 'Titulo',
 circleLocation:true,
 initial: false,
 container: 'findbox',
@@ -159,7 +159,7 @@ map.locate({setView: true, maxZoom: 16})
 var credctrl = L.controlCredits({
     image: "./123.svg",
     link: "https://www.uah.es/es/",
-    text: "Realizado por Fernando Hernández de Vega"
+    text: "Realizado por Fernando Hernández de Vega",
 }).addTo(map);
 
 
